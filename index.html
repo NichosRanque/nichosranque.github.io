@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichos Ranque - Student Portfolio | TACTICAL HQ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="tactical-logo">
+                <i class="fas fa-crosshairs"></i>
+                <h1>NICHOS POGI</h1>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>LOADING SYSTEM...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="tactical-nav">
+        <div class="nav-brand">
+            <i class="fas fa-chart-line"></i>
+            <span>NR_PORTFOLIO</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" data-section="home"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="#about" data-section="about"><i class="fas fa-user"></i> ABOUTS</a></li>
+            <li><a href="#arsenal" data-section="arsenal"><i class="fas fa-cogs"></i> SKILLS</a></li>
+            <li><a href="#projects" data-section="projects"><i class="fas fa-rocket"></i> PROJECTS</a></li>
+            <li><a href="#experience" data-section="experience"><i class="fas fa-medal"></i> BACKGROUND</a></li>
+            <li><a href="#contact" data-section="contact"><i class="fas fa-satellite-dish"></i> CONTACT ME</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="rank-badge">
+                        <span>MAJOR</span>
+                        <div class="rank-icon">★</div>
+                        <span>NETWORKS AND SECURITY</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="glitch" data-text="NICHOS RANQUE">NICHOS RANQUE</span>
+                        <span class="subtitle">4TH YEAR STUDENT PORTFOLIO</span>
+                    </h1>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">YEARS OF STUDY</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">PROJECTS COMPLETED</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1.0</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-primary" data-target="projects">
+                            <i class="fas fa-play"></i> VIEW PROJECTS
+                        </button>
+                        <button class="btn-secondary" data-target="contact">
+                            <i class="fas fa-envelope"></i> ESTABLISH CONTACT
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <img src="nic.jpg" alt="Nichos Ranque" class="profile-photo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-user-secret"></i> ABOUT ME</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-id-badge"></i>
+                        <h3>PROFILE</h3>
+                    </div>
+                    <div class="profile-info" id="profile-info">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>ACHIEVEMENTS</h3>
+                    </div>
+                    <div class="achievements" id="achievements">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Arsenal Section (Skills + Certifications) -->
+        <section id="arsenal" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-cogs"></i> SKILLS OF MINE</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- Skills Subsection -->
+            <div class="arsenal-subsection">
+                <div class="subsection-header">
+                    <h3><i class="fas fa-tools"></i> SKILLS</h3>
+                </div>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Dynamic skills will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- Certifications Subsection -->
+            <div class="arsenal-subsection">
+                <div class="subsection-header">
+                    <h3><i class="fas fa-certificate"></i> CREDENTIALS & CERTIFICATIONS</h3>
+                </div>
+                <div class="certifications-grid" id="certifications-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-rocket"></i> PROJECT PORTFOLIO</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+                <button class="filter-btn" data-filter="networking">NETWORKING</button>
+                <button class="filter-btn" data-filter="web">WEB DEVELOPMENT</button>
+                <button class="filter-btn" data-filter="programming">PROGRAMMING</button>
+                <button class="filter-btn" data-filter="academic">ACADEMIC</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamic projects will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-medal"></i> EDUCATION & EXPERIENCE</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline" id="experience-timeline">
+                <!-- Dynamic experience will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-satellite-dish"></i> CONTACT ME</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card location-card">
+                        <div class="location-visual">
+                            <div class="location-content">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>LOCATION</h3>
+                                <p>Philippine,<br>General Santos</p>
+                            </div>
+                            <img src="philippine_map.png" alt="Costa Rica Map" class="costa-rica-map">
+                            <img src="philippine_logo.png" alt="Costa Rica Flag" class="costa-rica-flag">
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GITHUB</h3>
+                        <p><a href="https://github.com/nichosranque" target="_blank" class="github-card">github.com/nichosranque</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LINKEDIN</h3>
+                        <p><a href="https://linkedin.com/in/nichosranque" target="_blank" class="linkedin-card">linkedin.com/in/nichosranque</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <h3>SEND MESSAGE</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select required>
+                        <option value="">Select Purpose</option>
+                        <option value="internship">Internship Opportunity</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="networking">Professional Networking</option>
+                        <option value="mentorship">Mentorship</option>
+                    </select>
+                    <textarea placeholder="Message Details" required></textarea>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> TRANSMIT
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
