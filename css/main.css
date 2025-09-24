@@ -479,7 +479,8 @@ body {
 .hero-visual {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .tactical-display {
@@ -795,11 +796,14 @@ body {
 /* Profile Photo - Clean and Simple */
 .profile-container {
     width: 100%;
-    height: 100%;
+    max-width: 500px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+    gap: 2rem;
+    margin: 0 auto;
 }
 
 .profile-photo {
@@ -812,6 +816,22 @@ body {
         0 0 20px rgba(0, 255, 136, 0.3),
         0 4px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
+    margin-top: -0rem; /* Move image up but keep centered */
+    margin-left: 6rem; /* Move image slightly to the right */
+}
+
+.profile-text {
+    text-align: center;
+    max-width: 500px;
+    margin-top: 0rem; /* Move text closer to image */
+}
+
+.profile-text p {
+    color: var(--text-secondary);
+    font-size: 2rem; /* Make text slightly larger */
+    line-height: 1.6;
+    font-weight: 400;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .profile-photo:hover {
@@ -826,10 +846,22 @@ body {
         width: 200px;
         height: 200px;
         border-width: 3px;
+        margin-top: -1rem;
+        margin-left: 1rem; /* Smaller margin on mobile */
     }
     
     .profile-container {
-        padding: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
+        gap: 1rem; /* Reduce gap on mobile for closer text */
+    }
+    
+    .profile-text {
+        max-width: 350px;
+        margin-top: -2rem; /* Move text closer to image on mobile */
+    }
+    
+    .profile-text p {
+        font-size: 1.3rem; /* Slightly larger on mobile too */
     }
 }
 
