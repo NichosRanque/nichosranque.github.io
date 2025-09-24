@@ -818,6 +818,7 @@ body {
     transition: all 0.3s ease;
     margin-top: -0rem; /* Move image up but keep centered */
     margin-left: 6rem; /* Move image slightly to the right */
+    /* Updated timestamp for cache refresh */
 }
 
 .profile-text {
