@@ -1382,6 +1382,88 @@ body {
     color: var(--primary-color);
 }
 
+/* Email Contact Card */
+.email-card {
+    color: var(--text-secondary) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.email-card:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hire Me Card */
+.hire-me-card {
+    background: linear-gradient(45deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 2px solid var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hire-me-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    transition: left 0.5s ease;
+}
+
+.hire-me-card:hover::before {
+    left: 100%;
+}
+
+.hire-me-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow-orange);
+    transform: translateY(-5px);
+}
+
+.hire-me-card i {
+    color: var(--secondary-color) !important;
+    font-size: 2.5rem !important;
+}
+
+.hire-me-card h3 {
+    color: var(--secondary-color) !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.btn-hire-me {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, var(--secondary-color), #ff8c42);
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hire-me:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+    background: linear-gradient(45deg, #ff8c42, var(--secondary-color));
+}
+
+.btn-hire-me i {
+    color: var(--bg-primary) !important;
+    font-size: 1.2rem !important;
+}
+
 .contact-form {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
